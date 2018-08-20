@@ -2,9 +2,12 @@
 #define MATRIX_H
 
 #include <initializer_list>
+#include <iostream>
 
 class Matrix
 {
+	friend std::ostream & operator << (std::ostream & o, const Matrix & m);
+
 public:
 	Matrix();
 	Matrix(const Matrix & matrixToCopy);

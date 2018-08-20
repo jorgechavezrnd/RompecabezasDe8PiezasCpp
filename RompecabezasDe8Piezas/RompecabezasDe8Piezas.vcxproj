@@ -144,7 +144,11 @@
     <ClCompile Include="Puzzle.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Casilla8.h" />
+    <ClInclude Include="Grafo.h" />
+    <ClInclude Include="Lista8.h" />
     <ClInclude Include="Matrix.h" />
+    <ClInclude Include="Nodo.h" />
     <ClInclude Include="Puzzle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

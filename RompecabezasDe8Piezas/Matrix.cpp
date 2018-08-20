@@ -1,5 +1,6 @@
 #include "Matrix.h"
 using std::initializer_list;
+using std::ostream;
 
 Matrix::Matrix()
 {
@@ -85,4 +86,13 @@ int* Matrix::operator [] (const int & row)
 const int* Matrix::operator [] (const int & row) const
 {
 	return boxes[row];
+}
+
+ostream & operator << (ostream & o, const Matrix & m)
+{
+	o << "{ { " << m.boxes[0][0] << ", " << m.boxes[0][1] << ", " << m.boxes[0][2] << " },";
+	o << "{ " << m.boxes[1][0] << ", " << m.boxes[1][1] << ", " << m.boxes[1][2] << " },";
+	o << "{ " << m.boxes[2][0] << ", " << m.boxes[2][1] << ", " << m.boxes[2][2] << " } }";
+
+	return o;
 }
