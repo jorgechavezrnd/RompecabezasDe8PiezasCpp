@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <initializer_list>
+#include "Matrix.h"
 
 class Puzzle
 {
@@ -22,9 +23,9 @@ public:
 	void moveRight();
 
 private:
-	int boxes[3][3];
-	int initial_state[3][3];
-	int final_state[3][3];
+	Matrix boxes;
+	Matrix initial_state;
+	Matrix final_state;
 	int empty_box_row;
 	int empty_box_column;
 };
