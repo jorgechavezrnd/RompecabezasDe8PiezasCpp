@@ -89,6 +89,27 @@ void Puzzle::showFinalState()
 	}
 }
 
+void Puzzle::move(Move move)
+{
+	switch (move)
+	{
+	case UP:
+		moveUp();
+		break;
+	case LEFT:
+		moveLeft();
+		break;
+	case DOWN:
+		moveDown();
+		break;
+	case RIGHT:
+		moveRight();
+		break;
+	default:
+		break;
+	}
+}
+
 void Puzzle::moveUp()
 {
 	--empty_box_row;

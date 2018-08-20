@@ -11,19 +11,19 @@ int main()
 				};
 
 	p.setFinalState({ 
-						{1, 2, 3}, 
-						{4, 0, 5}, 
-						{6, 7, 8} 
+						{ 1, 2, 3 }, 
+						{ 4, 0, 5 }, 
+						{ 6, 7, 8 } 
 					});
 
 	cout << p << endl;
-	p.moveUp();
+	p.move(UP);
 	cout << p << endl;
-	p.moveLeft();
+	p.move(LEFT);
 	cout << p << endl;
-	p.moveDown();
+	p.move(DOWN);
 	cout << p << endl;
-	p.moveRight();
+	p.move(RIGHT);
 	cout << p << endl;
 
 	p.showInitialState();
